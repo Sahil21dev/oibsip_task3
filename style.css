@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #cca572;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #2b2d42;
+}
+
+.container {
+  width: 600px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2b2d42;
+}
+
+.taskField {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#text {
+  width: 75%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #e0e4e8;
+  border-radius: 10px;
+  background-color: #f9fafc;
+  color: #2b2d42;
+}
+
+#button {
+  width: 22%;
+  background-color: #0d3b66;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#button:hover {
+  background-color: #2a9d8f;
+}
+
+.task-lists {
+  display: flex;
+  gap: 1rem;
+}
+
+.pending, .completed {
+  width: 48%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #264653;
+  margin-bottom: 1rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.task .addedTask {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-right: 1rem;
+}
+
+.task .taskTime {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.task .editButton, .task .deleteButton, .task .completeButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #e63946;
+  transition: color 0.3s ease;
+}
+
+.task .editButton:hover, .task .deleteButton:hover, .task .completeButton:hover {
+  color: #1abc9c;
+}
